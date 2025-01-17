@@ -29,6 +29,8 @@ If for any reason the virtual environment is not activated automatically, you ca
 
 Once activated, the terminal should show: `(.venv) username$`
 
+3. To install all the required dependecies needed to run the project, execute the following command: `$ pip install -r requirements.txt`
+
 <u>Commiting to this project:</u>
 
 1. Go to develop branch: `git checkout develop`
