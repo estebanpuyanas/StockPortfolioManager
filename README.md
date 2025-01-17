@@ -56,4 +56,4 @@ Similarly, if you were creating the frotend UI for user login, the branch should
 
 Not all PR branches will have a clear cut name that follows this format, but follow this convetion whenever possible. It helps mantain a neat commit history and understanding of the project's progress/state.
 
-Created by Qin Davis & Esteban Puyana.
+Created by Qin Davis & Esteban Puyana. last working version January 16 2025.
