@@ -1,5 +1,5 @@
-/.venv
+/.venv # virtual environment is setup when clonining repo and has indiovidual machine dependencies.
 
-/.DS_Store
+/.DS_Store # Mac OS file system metadata file.
 
-/.env
+/.env # environment variables file.

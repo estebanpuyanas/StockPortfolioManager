@@ -50,9 +50,9 @@ Now, in GitHub, create a PR to merge the branch into develop. Make sure you titl
 2. Pull: `git pull origin develop`
 
 When creating branches from `develop` to edit/fix/add features, please ensure that the branch name follows this convention:
-`feat:<project-folder-name branch-work>`. <br>
-For example, If you were to create a branch to create tests for backend API calls, the branch should be called: `feat:backend-API-Calls-Tests` <br>
-Similarly, if you were creating the frotend UI for user login, the branch should be called: `feat:frontend-User-login-UI` <br>
+`<project-folder-name branch-work>`. <br>
+For example, If you were to create a branch to create tests for backend API calls, the branch should be called: `backend-API-Calls-Tests` <br>
+Similarly, if you were creating the frotend UI for user login, the branch should be called: `frontend-User-login-UI` <br>
 
 Not all PR branches will have a clear cut name that follows this format, but follow this convetion whenever possible. It helps mantain a neat commit history and understanding of the project's progress/state.
 
