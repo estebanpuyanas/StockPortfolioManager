@@ -2,6 +2,6 @@
 
 /.DS_Store # Mac OS file system metadata file.
 
-/.env # environment variables file.
+/.env # environment variables file.  
 
 /.code-workspace # Visual Studio Code workspace file.
