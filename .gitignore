@@ -4,6 +4,4 @@
 
 /.env # environment variables file.  
 
-/.venv # virtual environment is setup when clonining repo and has indiovidual machine dependencies.
-
 /.vscode # Visual Studio Code workspace files.

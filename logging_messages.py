@@ -10,4 +10,5 @@ class logging_messages:
     # Error/Failure messages:
     STOCK_IN_PORTFOLIO = 'This stock already exists in the portfolio. Please update the stock information or try adding a stock with different ticker.'
     STOCK_NOT_IN_PORTFOLIO = 'This stock does not exist in the portfolio. Please check the ticker and try again.'
+    STOCK_INFO_FETCH_FAIL = 'Failed to fecth stock information for this stock. Please ensure all the information is correct and try again.'
 
