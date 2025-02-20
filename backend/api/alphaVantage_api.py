@@ -1,12 +1,16 @@
 import requests
 import os
+import logging_messages as messages
+from dotenv import load_dotenv
+
+load_dotenv() 
+API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")
 
 # Base URL for AlphaVantage API
 ALPHA_VANTAGE_BASE_URL = "https://www.alphavantage.co/query"
 API_KEY = os.getenv("ALPHA_VANTAGE_API_KEY")  # Store your API key in an environment variable
 
 def get_stock_price(stock_ticker: str) -> float:
-    """Fetches the latest stock price from AlphaVantage API."""
     params = {
         "function": "GLOBAL_QUOTE",
         "symbol": stock_ticker,
@@ -22,7 +26,6 @@ def get_stock_price(stock_ticker: str) -> float:
         raise ValueError(f"Could not fetch stock price for {stock_ticker}: {data}")
 
 def get_stock_info(stock_ticker: str):
-    """Fetches stock information (price, volume, etc.) from AlphaVantage API."""
     params = {
         "function": "TIME_SERIES_INTRADAY",
         "symbol": stock_ticker,
@@ -41,4 +44,4 @@ def get_stock_info(stock_ticker: str):
             "volume": int(latest_data["5. volume"])
         }
     else:
-        raise ValueError(f"Could not fetch stock info for {stock_ticker}: {data}")
+        raise ValueError(messages.STOCK_INFO_FETCH_FAIL)
